@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35" started-at="2021-05-17T10:59:44Z" finished-at="2021-05-17T10:59:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35" started-at="2021-05-17T10:59:44Z" finished-at="2021-05-17T10:59:44Z">
+      <class name="com.qa.tests.DevopsTest">
+        <test-method status="PASS" signature="test2()[pri:2, instance:com.qa.tests.DevopsTest@7ac7a4e4]" name="test2" duration-ms="11" started-at="2021-05-17T10:59:44Z" finished-at="2021-05-17T10:59:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+      </class> <!-- com.qa.tests.DevopsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
