@@ -1,14 +1,13 @@
 package com.qa.tests;
 
-import java.io.IOException;
-
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -93,25 +92,24 @@ public class DevopsTest  {
 //	}
 	
 	
-//	@Test(priority=1)
-//	public void test1()
-//	{
-//		WebDriver driver;
-//		System.out.println("\n");
-//		//WebDriverManager.chromedriver().setup();
-//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\driver90\\chromedriver.exe");
-//		//WebDriverManager.firefoxdriver().setup();
-//		//System.getProperty("user.dir")+"\\src\\main\\java\\com\\qa\\driver86\\chromedriver.exe");
+	@Test(priority=1)
+	public void test1()
+	{
+		WebDriver driver;
+		System.out.println("Executing test1");
+//		WebDriverManager.chromedriver().setup();
 //		driver=new ChromeDriver();
-//		driver.get("http://3.141.38.140:8080/webapp/");
-//		WebElement el=driver.findElement(By.xpath("//h1[contains(text(),'Rahul')]"));
-//		String text=el.getText();
-//		System.out.println(text);
-//	
-//	//extentTest=extentReports.startTest("Test1");
-//	//log.info("***Starting the test case: Test1***");	
-//		driver.quit();
-//	}
+		WebDriverManager.firefoxdriver().setup();
+		driver=new FirefoxDriver();
+		driver.get("http://3.141.38.140:8080/webapp/");
+		WebElement el=driver.findElement(By.xpath("//h1[contains(text(),'Rahul')]"));
+		String text=el.getText();
+		System.out.println(text);
+	
+	//extentTest=extentReports.startTest("Test1");
+	//log.info("***Starting the test case: Test1***");	
+		driver.quit();
+	}
 	
 	@Test(priority=2)
 	public void test2()
