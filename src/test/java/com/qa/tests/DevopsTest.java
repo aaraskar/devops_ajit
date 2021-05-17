@@ -3,7 +3,7 @@ package com.qa.tests;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -97,10 +97,10 @@ public class DevopsTest  {
 	{
 		WebDriver driver;
 		System.out.println("Executing test1");
-//		WebDriverManager.chromedriver().setup();
-//		driver=new ChromeDriver();
-		WebDriverManager.firefoxdriver().setup();
-		driver=new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		driver=new ChromeDriver();
+//		WebDriverManager.firefoxdriver().setup();
+//		driver=new FirefoxDriver();
 		driver.get("http://3.141.38.140:8080/webapp/");
 		WebElement el=driver.findElement(By.xpath("//h1[contains(text(),'Rahul')]"));
 		String text=el.getText();
